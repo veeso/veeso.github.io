@@ -1,0 +1,12 @@
+.parallax {
+  overflow: hidden;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sidebar {
+  background-color: teal;
+  color: white;
+}

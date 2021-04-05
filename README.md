@@ -1,2 +1,3 @@
 # veeso.github.io
-my portfolio
+
+why u're reading this
