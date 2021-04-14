@@ -41,13 +41,13 @@ pre {
 }
 
 .sidebar {
-  background-color: #404040;
+  background-color: #202020;
   color: white;
 }
 
 .home-parallax {
   font-family: "Source Sans Pro" !important;
-  background-image: url("../assets/images/pexels-markus-spiske-2004161.jpg");
+  background-image: url("../assets/images/hero-bg.jpg");
   width: 100%;
   height: 100vh;
   display: flex;
@@ -82,7 +82,7 @@ pre {
   left: 0;
   bottom: 0;
   z-index: 1000; /* so the menu or its navicon stays above all content */
-  background: #191818;
+  background: #202020;
   overflow-y: auto;
 }
 /*
@@ -108,14 +108,14 @@ pre {
   */
 #menu .pure-menu ul,
 #menu .pure-menu .menu-item-divided {
-  border-top: 1px solid #333;
+  border-top: 1px solid #202020;
 }
 /*
       Change color of the anchor links on hover/focus.
       */
 #menu .pure-menu li a:hover,
 #menu .pure-menu li a:focus {
-  background: #333;
+  background: #303030;
 }
 
 /*
@@ -123,7 +123,7 @@ pre {
   */
 #menu .pure-menu-selected,
 #menu .pure-menu-heading {
-  background: #1f8dd6;
+  border-bottom: 2px solid #da3c5e;
 }
 /*
       This styles a link within a selected menu item `<li>`.
@@ -157,7 +157,7 @@ small screens.
   display: block; /* show this only on small screens */
   top: 0;
   left: 0; /* "#menu width" */
-  background: #000;
+  background: #202020;
   background: rgba(0, 0, 0, 0.7);
   font-size: 10px; /* change this value to increase/decrease button size */
   z-index: 10;
@@ -168,7 +168,7 @@ small screens.
 
 .menu-link:hover,
 .menu-link:focus {
-  background: #000;
+  background: #202020;
 }
 
 .menu-link span {
