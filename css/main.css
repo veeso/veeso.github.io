@@ -20,6 +20,10 @@
     U+FEFF, U+FFFD;
 }
 
+body {
+  font-family: "Source Sans Pro" !important;
+}
+
 pre {
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
   padding: 16px;
@@ -110,35 +114,57 @@ pre {
 #menu .pure-menu .menu-item-divided {
   border-top: 1px solid #202020;
 }
+
+#menu .pure-menu i {
+  margin-right: 1ch;
+}
+
 /*
       Change color of the anchor links on hover/focus.
       */
 #menu .pure-menu li a:hover,
 #menu .pure-menu li a:focus {
-  background: #303030;
+  background: #1a1a1a;
 }
 
 /*
   This styles the selected menu item `<li>`.
   */
-#menu .pure-menu-selected,
-#menu .pure-menu-heading {
-  border-bottom: 2px solid #da3c5e;
+#menu .pure-menu-selected {
+  background: #1a1a1a;
 }
+
+#menu .pure-menu-selected i {
+  color: #da3c5e;
+}
+
 /*
       This styles a link within a selected menu item `<li>`.
       */
 #menu .pure-menu-selected a {
   color: #fff;
+  font-weight: 500;
 }
 
 /*
   This styles the menu heading.
   */
 #menu .pure-menu-heading {
-  font-size: 110%;
   color: #fff;
   margin: 0;
+  font-family: "Source Sans Pro" !important;
+  text-align: left;
+  padding: 0 0 0 10%;
+}
+
+#menu .pure-menu-heading h1 {
+  font-size: 1.4em;
+  text-transform: none;
+}
+
+#menu .pure-menu-heading h2 {
+  font-size: 1.1em;
+  text-transform: none;
 }
 
 /* -- Dynamic Button For Responsive Menu -------------------------------------*/

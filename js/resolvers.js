@@ -2,7 +2,6 @@
  * @description resolve age in resolve-age elements
  */
 function resolveAge() {
-  console.log("Sticazzo");
   const birthdate = new Date(1997, 4, 30);
   const diff = Date.now() - birthdate.getTime();
   const ageDate = new Date(diff);
