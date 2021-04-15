@@ -18,8 +18,7 @@ function selectMenuEntry(hash) {
 }
 
 function onWaypoint(hash) {
-  location.hash = hash;
-  onHashChange();
+  selectMenuEntry(hash);
 }
 
 // Scroll events
@@ -53,3 +52,15 @@ const contactsWaypoint = new Waypoint({
 
 // Register
 window.onhashchange = onHashChange;
+
+window.onscroll = function () {
+  if (document.documentElement.scrollTop === 0) {
+    // Reset about me
+    onWaypoint("#about-me");
+  }
+};
+
+// Startup
+$(function () {
+  onHashChange();
+});

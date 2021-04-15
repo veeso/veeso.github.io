@@ -11,11 +11,6 @@
       rel="stylesheet"
       href="https://unpkg.com/purecss@2.0.5/build/base-min.css"
     />
-    <!-- Grids -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/purecss@2.0.5/build/grids-responsive-min.css"
-    />
     <!-- Pure.css -->
     <link
       rel="stylesheet"
@@ -23,6 +18,7 @@
     />
     <!-- Icons -->
     <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/devicon.min.css" />
     <!-- Animate.css -->
     <link
       rel="stylesheet"
@@ -76,13 +72,13 @@
               >
             </li>
             <li class="pure-menu-item">
-              <a href="#work-experience" class="pure-menu-link"
-                ><i class="fa fa-briefcase"></i>&nbsp;Work experience</a
+              <a href="#projects" class="pure-menu-link"
+                ><i class="fa fa-edit"></i>&nbsp;Projects</a
               >
             </li>
             <li class="pure-menu-item">
-              <a href="#projects" class="pure-menu-link"
-                ><i class="fa fa-edit"></i>&nbsp;Projects</a
+              <a href="#work-experience" class="pure-menu-link"
+                ><i class="fa fa-briefcase"></i>&nbsp;Work experience</a
               >
             </li>
             <li class="pure-menu-item">
@@ -113,6 +109,146 @@
             </p>
           </div>
         </section>
+        <!-- Projects -->
+        <section id="projects" class="page">
+          <div class="container">
+            <header>
+              <h1>
+                <a href="#projects"><i class="fa fa-edit"></i>&nbsp;Projects</a>
+              </h1>
+            </header>
+            <div class="cards">
+              <!-- Termscp -->
+              <div class="card">
+                <h1>
+                  <a href="https://github.com/veeso/termscp" target="_blank"
+                    ><i class="devicon-rust-plain"></i>&nbsp;termscp</a
+                  >
+                </h1>
+                <pre>cargo install termscp</pre>
+                <img
+                  src="https://raw.githubusercontent.com/veeso/termscp/main/assets/images/explorer.gif"
+                  class="preview"
+                />
+                <p>
+                  TermSCP is a terminal GUI for a SFTP/FTP/SCP client. So
+                  basically is a terminal utility with an TUI to connect to a
+                  remote server to retrieve and upload files and to interact
+                  with the local file system. It works both on Linux, MacOS, BSD
+                  and Windows and supports SFTP, SCP, FTP and FTPS.
+                </p>
+              </div>
+              <!-- ATtila -->
+              <div class="card">
+                <h1>
+                  <a href="https://github.com/veeso/ATtila" target="_blank"
+                    ><i class="devicon-python-plain"></i>&nbsp;ATtila</a
+                  >
+                </h1>
+                <pre>pip3 install attila</pre>
+                <pre>
+#Set up communication parameters
+DEVICE /dev/ttyUSB0
+BAUDRATE 115200
+ATH0;;;;5000
+ATE0;;OK
+ATZ;;OK
+ATE0;;OK
+#I'm going to verify signal etc, we don't need to aof
+AT+CSQ;;OK;;;;;;["AT+CSQ=?{rssi::[0-9]{1,2}},","AT+CSQ=${rssi},?{ber::[0-9]{1,2}}"]
+AT+CGSN;;OK;;;;;;["?{IMEI::^[0-9]{15}$}"]
+                </pre>
+                <p>
+                  ATtila is both a Python3 🐍 module and a CLI utility. The
+                  module's purpose is to ease the communication with devices
+                  through serial port, automating the scripts execution
+                  workflow; in particular ATtila is designed for RF modules
+                  which use AT commands. It is both possible to send single AT
+                  commands indicating what is the expected response, what
+                  information to store for each command and define an
+                  alternative behaviour in case of an unexpected responses.
+                </p>
+              </div>
+              <!-- FlapQML -->
+              <div class="card">
+                <h1>
+                  <a href="https://github.com/veeso/FlapQML" target="_blank"
+                    ><i class="fa fa-terminal"></i>&nbsp;FlapQML</a
+                  >
+                </h1>
+                <img
+                  src="https://github.com/veeso/FlapQML/blob/master/img/flaps.gif?raw=true"
+                  class="preview"
+                />
+                <p>
+                  FlapQML is a component for QtQuick applications which can be
+                  used to create flapboards, flipclocks and other flap-related
+                  stuff. The component Flap represents a single Flap, which can
+                  then be used with other flaps (in a grid for example) to
+                  create a board.
+                </p>
+              </div>
+              <!-- tui-realm -->
+              <div class="card">
+                <h1>
+                  <a href="https://github.com/veeso/tui-realm" target="_blank"
+                    ><i class="devicon-rust-plain"></i>&nbsp;tui-realm</a
+                  >
+                </h1>
+                <pre>cargo add tui-realm</pre>
+                <p>
+                  tui-realm is a framework for
+                  <a href="https://github.com/fdehau/tui-rs">tui</a> which
+                  provides a layer to simplify the implementation of terminal
+                  user interfaces adding the possibility to work with re-usable
+                  component with properties and state, as you'd do in React; but
+                  that's not all: the input events are handled through a system
+                  based on Messages, providing you with the possibility to
+                  implement update functions as happens in Elm.
+                </p>
+              </div>
+              <!-- tui-realm -->
+              <div class="card">
+                <h1>
+                  <a href="https://github.com/veeso/pyc-shell" target="_blank"
+                    ><i class="devicon-rust-plain"></i>&nbsp;pyc-shell</a
+                  >
+                </h1>
+                <pre>cargo install pyc-shell</pre>
+                <p>
+                  pyc (Pronounced "Rus") is a simple CLI application, written in
+                  Rust, which allows you to interface with your favourite shell,
+                  giving you the possibility to perform commands in cyrillic and
+                  other alphabets, through command and output transliteration.
+                </p>
+              </div>
+              <div class="card">
+                <h1>
+                  <a href="https://github.com/veeso/libBMpp" target="_blank"
+                    ><i class="devicon-cplusplus-plain"></i>&nbsp;libBMpp</a
+                  >
+                </h1>
+                <p>
+                  libBmpp is a library for working with Bitmaps C++11 (or
+                  greater), which allows you to manipulate bitmaps images.
+                </p>
+              </div>
+              <!-- End of cards -->
+            </div>
+            <hr />
+            <h2 class="read-more">
+              <a href="https://github.com/veeso" target="_blank"
+                >Discover many other projects on my Github</a
+              >
+            </h2>
+            <h3 class="read-more">
+              ❤️ my projects?
+              <a href="https://www.buymeacoffee.com/veeso" target="_blank"
+                >Please consider a donation</a
+              >
+            </h3>
+          </div>
+        </section>
         <!-- Work Experience -->
         <section id="work-experience" class="page">
           <div class="container">
@@ -121,16 +257,6 @@
                 <a href="#work-experience"
                   ><i class="fa fa-briefcase"></i>&nbsp;Work experience</a
                 >
-              </h1>
-            </header>
-          </div>
-        </section>
-        <!-- Projects -->
-        <section id="projects" class="page">
-          <div class="container">
-            <header>
-              <h1>
-                <a href="#projects"><i class="fa fa-edit"></i>&nbsp;Projects</a>
               </h1>
             </header>
           </div>
@@ -153,14 +279,7 @@
                   ></a>
                 </li>
                 <li>
-                  <a
-                    href="https://www.instagram.com/christian_visintin"
-                    target="_blank"
-                    ><i class="fa fa-instagram"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://www.buymeacoffee.com/veeso"
+                  <a href="https://www.buymeacoffee.com/veeso" target="_blank"
                     ><i class="fa fa-coffee"></i
                   ></a>
                 </li>
@@ -171,7 +290,8 @@
                 </li>
               </ul>
               <!-- Copyright -->
-              <span>Christian Visintin © All Rights Reserved ~ 2021</span>
+              <span>Christian Visintin © All Rights Reserved ~ </span
+              ><span class="resolve-copyright"></span>
             </footer>
           </div>
         </section>

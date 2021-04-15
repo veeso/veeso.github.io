@@ -7,8 +7,15 @@ function resolveAge() {
   const ageDate = new Date(diff);
   const age = Math.abs(ageDate.getUTCFullYear() - 1970);
   // Replace all tags
-  $(".resolve-age").each(function (el) {
+  $(".resolve-age").each(function () {
     $(this).text(age);
+  });
+}
+
+function resolveCopyright() {
+  const year = new Date().getFullYear();
+  $(".resolve-copyright").each(function () {
+    $(this).text(year);
   });
 }
 
@@ -17,7 +24,10 @@ function resolveAge() {
  */
 function resolve() {
   resolveAge();
+  resolveCopyright();
 }
 
 // init
-resolve();
+$(function () {
+  resolve();
+});
