@@ -7,9 +7,8 @@ function resolveAge() {
   const ageDate = new Date(diff);
   const age = Math.abs(ageDate.getUTCFullYear() - 1970);
   // Replace all tags
-  document.querySelectorAll(".resolve-age").forEach(function (el) {
-    console.log("AHO", age);
-    el.textContent = age;
+  $(".resolve-age").each(function (el) {
+    $(this).text(age);
   });
 }
 

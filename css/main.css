@@ -11,6 +11,28 @@
 
 @font-face {
   font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7lujVj9w.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu3cOWxw.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
   font-style: italic;
   font-weight: 300;
   src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkids18S0xR41.woff2)
@@ -36,17 +58,80 @@ pre {
   word-wrap: normal;
 }
 
+header {
+  margin: 0 2em 0 0;
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0 2em 0;
+}
+
+footer .contacts {
+  cursor: default;
+}
+
+footer .contacts {
+  list-style: none;
+}
+
+footer .contacts li {
+  display: inline-block;
+}
+
+footer .contacts a {
+  font-size: 3em;
+  color: #fff;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  border: 0;
+  text-decoration: none;
+}
+
+footer .contacts a i {
+  transition: all 0.3s ease-in;
+}
+
+footer .contacts li:nth-child(1) a:hover i {
+  color: #dd3838 !important;
+}
+
+footer .contacts li:nth-child(2) a:hover i {
+  color: #ddd238 !important;
+}
+
+footer .contacts li:nth-child(3) a:hover i {
+  color: #3ddd38 !important;
+}
+
+footer .contacts li:nth-child(4) a:hover i {
+  color: #3848dd !important;
+}
+
+footer .contacts li:nth-child(5) a:hover i {
+  color: #9b38dd !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Source Sans Pro";
+  font-weight: 300;
+}
+
+/** Parallax */
+
 .parallax {
   overflow: hidden;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.sidebar {
-  background-color: #202020;
-  color: white;
 }
 
 .home-parallax {
@@ -69,6 +154,27 @@ pre {
   width: 50%;
   height: 50%;
   padding: 5%;
+  overflow-y: auto;
+}
+
+.parallax-card a {
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+.parallax-card a:hover {
+  color: purple;
+}
+
+.parallax-card h1,
+h2,
+p {
+  font-family: "Source Sans Pro" !important;
+  font-weight: 300;
+}
+
+.parallax-card p {
+  font-size: 1.2em;
 }
 
 .avatar {
@@ -77,6 +183,52 @@ pre {
   border: 1px solid #ccc;
   border-radius: 50%;
 }
+
+/** Pages */
+
+section.page {
+  width: 100%;
+  height: auto;
+  border-top: 1px solid #aaa;
+  display: inline-block;
+}
+
+.container {
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container header a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: dotted 1px #80808080;
+  cursor: text;
+}
+
+.container header a i {
+  color: #606060;
+}
+
+#work-experience {
+  background-color: #fff;
+}
+
+#projects {
+  background-color: #eee;
+}
+
+#contacts {
+  background-color: #303030;
+  color: white;
+}
+
+#contacts i {
+  color: white;
+}
+
+/** Menu */
 
 #menu {
   margin-left: -20vw; /* "#menu" width */
@@ -153,8 +305,13 @@ pre {
   color: #fff;
   margin: 0;
   font-family: "Source Sans Pro" !important;
-  text-align: left;
-  padding: 0 0 0 10%;
+  margin: 10% 5% 10% 5%;
+  position: relative;
+}
+
+#menu .pure-menu-heading .avatar {
+  width: 30%;
+  border-radius: 0.5em;
 }
 
 #menu .pure-menu-heading h1 {
@@ -165,6 +322,7 @@ pre {
 #menu .pure-menu-heading h2 {
   font-size: 1.1em;
   text-transform: none;
+  color: #808080;
 }
 
 /* -- Dynamic Button For Responsive Menu -------------------------------------*/
