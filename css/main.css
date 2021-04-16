@@ -202,7 +202,7 @@ h5 {
   position: relative;
   margin: auto;
   width: 50%;
-  height: 50%;
+  height: 40%;
   padding: 5%;
   overflow-y: auto;
 }
@@ -267,10 +267,6 @@ section.page hr {
   color: #606060;
 }
 
-#about-me {
-  background-color: #fff;
-}
-
 #projects {
   background-color: #f8f8f8;
 }
@@ -286,6 +282,53 @@ section.page hr {
 
 #contacts i {
   color: white;
+}
+
+#about-me-page {
+  background-color: #fff;
+}
+
+#about-me-page h2 {
+  font-weight: 700;
+  text-align: center;
+  font-size: 2em;
+  text-transform: capitalize;
+}
+
+#about-me-page h3 {
+  font-weight: 500;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+#about-me-page .brief {
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+#about-me-page ul {
+  text-align: center;
+  list-style: none;
+  cursor: default;
+  margin-block-start: 0;
+  padding-inline-start: 0;
+}
+
+#about-me-page li {
+  display: inline-block;
+  margin: 0 1.5em 0 1.5em;
+}
+
+#about-me-page ul li:nth-child(1) .icon {
+  color: #dd3838;
+}
+
+#about-me-page ul li:nth-child(2) .icon {
+  color: #2eb429;
+}
+
+#about-me-page ul li:nth-child(3) .icon {
+  color: #295ab4;
 }
 
 /** Project */
