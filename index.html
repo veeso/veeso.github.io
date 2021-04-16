@@ -99,8 +99,8 @@
             <h2>Software Engineer</h2>
             <hr />
             <p>
-              I'm a&nbsp;<span class="resolve-age"></span>&nbsp;years old
-              software and web developer. I live in Udine, Italy.
+              I'm a&nbsp;<span resolve-age></span>&nbsp;years old software and
+              web developer. I live in Udine, Italy.
               <br />
               I'm a software engineer at
               <a href="https://www.prima.it/" target="_blank">@prima.it</a>
@@ -176,10 +176,13 @@ AT+CGSN;;OK;;;;;;["?{IMEI::^[0-9]{15}$}"]
                     ><i class="fa fa-terminal"></i>&nbsp;FlapQML</a
                   >
                 </h1>
-                <img
-                  src="https://github.com/veeso/FlapQML/blob/master/img/flaps.gif?raw=true"
-                  class="preview"
-                />
+                <video class="preview" autoplay muted loop>
+                  <source
+                    src="assets/videos/flaps.mp4"
+                    type="video/mp4"
+                    resolve-video-fallback="https://github.com/veeso/FlapQML/blob/master/img/flaps.gif?raw=true"
+                  />
+                </video>
                 <p>
                   FlapQML is a component for QtQuick applications which can be
                   used to create flapboards, flipclocks and other flap-related
@@ -291,7 +294,7 @@ AT+CGSN;;OK;;;;;;["?{IMEI::^[0-9]{15}$}"]
               </ul>
               <!-- Copyright -->
               <span>Christian Visintin © All Rights Reserved ~ </span
-              ><span class="resolve-copyright"></span>
+              ><span resolve-copyright></span>
             </footer>
           </div>
         </section>
