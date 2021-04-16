@@ -77,6 +77,16 @@ header {
   float: right;
 }
 
+.try-50 {
+  width: 50%;
+}
+
+@media screen and (max-width: 640px) {
+  .try-50 {
+    width: 100%;
+  }
+}
+
 /** Card */
 
 .cards {
@@ -254,6 +264,7 @@ section.page hr {
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  overflow: auto;
 }
 
 .container header a {
@@ -306,7 +317,7 @@ section.page hr {
   text-align: justify;
 }
 
-#about-me-page ul {
+#about-me-page .hobbies ul {
   text-align: center;
   list-style: none;
   cursor: default;
@@ -314,21 +325,59 @@ section.page hr {
   padding-inline-start: 0;
 }
 
-#about-me-page li {
+#about-me-page .hobbies li {
   display: inline-block;
-  margin: 0 1.5em 0 1.5em;
+  margin: 0 2em 0 2em;
 }
 
-#about-me-page ul li:nth-child(1) .icon {
+#about-me-page .hobbies ul li:nth-child(1) .icon {
   color: #dd3838;
 }
 
-#about-me-page ul li:nth-child(2) .icon {
+#about-me-page .hobbies ul li:nth-child(2) .icon {
   color: #2eb429;
 }
 
-#about-me-page ul li:nth-child(3) .icon {
+#about-me-page .hobbies ul li:nth-child(3) .icon {
   color: #295ab4;
+}
+
+/** Skill blocks */
+
+#about-me-page .skills ul {
+  list-style: none;
+  text-align: center;
+}
+
+#about-me-page .skills i {
+  padding-right: 1ch;
+}
+
+#about-me-page .skills h3 {
+  font-size: 1.5 em;
+  color: #202020;
+  font-weight: 300;
+}
+
+#about-me-page .skills h4 {
+  font-size: 1.25em;
+  color: #202020;
+  font-weight: 300;
+}
+
+#about-me-page .skill-block {
+  height: 0.6em;
+  width: 3em;
+  background-color: #404040;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+#about-me-page .skill-block-empty {
+  height: 0.6em;
+  width: 3em;
+  background-color: #a0a0a0;
+  display: inline-block;
 }
 
 /** Project */
@@ -637,9 +686,9 @@ small screens.
 }
 
 /*
-Hides the menu at `48em`, but modify this based on your app's needs.
+Hides the menu at `640px`, but modify this based on your app's needs.
 */
-@media (min-width: 48em) {
+@media (min-width: 640px) {
   .header {
     padding-left: 2em;
     padding-right: 2em;
@@ -664,7 +713,7 @@ Hides the menu at `48em`, but modify this based on your app's needs.
   }
 }
 
-@media (max-width: 48em) {
+@media (max-width: 640px) {
   /* Only apply this when the window is small. Otherwise, the following
   case results in extra padding on the left:
       * Make the window small.
