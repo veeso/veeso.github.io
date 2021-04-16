@@ -5,7 +5,7 @@ const hashBlacklist = ["#menu"];
  */
 function onHashChange() {
   const hash = location.hash;
-  if (!hashBlacklist.includes(hash)) {
+  if (!hashBlacklist.includes(hash) && hash.length > 0) {
     selectMenuEntry(location.hash);
   }
 }
@@ -45,17 +45,17 @@ const aboutmeWaypoint = new Waypoint({
   },
 });
 
-const workExperienceWaypoint = new Waypoint({
-  element: document.getElementById("work-experience"),
-  handler: function (_) {
-    onWaypoint("#work-experience");
-  },
-});
-
 const projectsWaypoint = new Waypoint({
   element: document.getElementById("projects"),
   handler: function (_) {
     onWaypoint("#projects");
+  },
+});
+
+const workExperienceWaypoint = new Waypoint({
+  element: document.getElementById("work-experience"),
+  handler: function (_) {
+    onWaypoint("#work-experience");
   },
 });
 
@@ -81,4 +81,8 @@ $(function () {
   onHashChange();
   // Burger event listener
   $("#menu-burger").on("click", onMenuBurgerClick);
+  $(".pure-menu-heading").on("click", function () {
+    location.hash = "#";
+    onHashChange();
+  });
 });

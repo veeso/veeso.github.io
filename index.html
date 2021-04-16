@@ -55,7 +55,7 @@
         <div class="pure-menu">
           <div class="pure-menu-heading">
             <div class="pic-box">
-              <img class="avatar" src="assets/images/avatar.jpg" />
+              <img class="avatar" src="assets/images/avatar.webp" />
             </div>
             <h1>@veeso</h1>
             <h2>Software Engineer</h2>
@@ -86,10 +86,10 @@
       </div>
       <!-- Body -->
       <div>
-        <!-- About me -->
-        <section id="about-me" class="parallax home-parallax">
+        <!-- Hero -->
+        <section id="hero" class="parallax home-parallax">
           <div class="parallax-card">
-            <img class="avatar" src="assets/images/avatar.jpg" />
+            <img class="avatar img-circle" src="assets/images/avatar.webp" />
             <h1>Christian Visintin</h1>
             <h2>Software Engineer</h2>
             <hr />
@@ -104,6 +104,15 @@
             </p>
           </div>
         </section>
+        <section id="about-me" class="page">
+          <div class="container">
+            <header>
+              <h1>
+                <a href="#about-me"><i class="fa fa-user"></i>&nbsp;About me</a>
+              </h1>
+            </header>
+          </div>
+        </section>
         <!-- Projects -->
         <section id="projects" class="page">
           <div class="container">
@@ -112,123 +121,122 @@
                 <a href="#projects"><i class="fa fa-edit"></i>&nbsp;Projects</a>
               </h1>
             </header>
-            <div class="cards">
-              <!-- Termscp -->
-              <div class="card">
-                <h1>
-                  <a href="https://github.com/veeso/termscp" target="_blank"
-                    ><i class="devicon-rust-plain"></i>&nbsp;termscp</a
-                  >
-                </h1>
-                <pre>cargo install termscp</pre>
-                <img
-                  src="https://raw.githubusercontent.com/veeso/termscp/main/assets/images/explorer.gif"
-                  class="preview"
+            <!-- TermSCP -->
+            <div class="project">
+              <img
+                src="https://raw.githubusercontent.com/veeso/termscp/main/assets/images/explorer.gif"
+                class="preview pull-left"
+              />
+              <h1>
+                <a href="https://github.com/veeso/termscp" target="_blank"
+                  ><i class="devicon-rust-plain"></i>&nbsp;termscp</a
+                >
+              </h1>
+              <pre>cargo install termscp</pre>
+              <p>
+                TermSCP is a terminal GUI for a SFTP/FTP/SCP client. So
+                basically is a terminal utility with an TUI to connect to a
+                remote server to retrieve and upload files and to interact with
+                the local file system. It works both on Linux, MacOS, BSD and
+                Windows and supports SFTP, SCP, FTP and FTPS.
+              </p>
+            </div>
+            <!-- ATtila -->
+            <div class="project">
+              <img src="assets/images/attila.webp" class="preview pull-right" />
+              <h1>
+                <a href="https://github.com/veeso/ATtila" target="_blank"
+                  ><i class="devicon-python-plain"></i>&nbsp;ATtila</a
+                >
+              </h1>
+              <pre>pip3 install attila</pre>
+              <p>
+                ATtila is both a Python3 🐍 module and a CLI utility. The
+                module's purpose is to ease the communication with devices
+                through serial port, automating the scripts execution workflow;
+                in particular ATtila is designed for RF modules which use AT
+                commands. It is both possible to send single AT commands
+                indicating what is the expected response, what information to
+                store for each command and define an alternative behaviour in
+                case of an unexpected responses.
+              </p>
+            </div>
+            <!-- FlapQML -->
+            <div class="project">
+              <video class="preview pull-left" autoplay muted loop>
+                <source
+                  src="assets/videos/flaps.mp4"
+                  type="video/mp4"
+                  resolve-video-fallback="https://github.com/veeso/FlapQML/blob/master/img/flaps.gif?raw=true"
                 />
-                <p>
-                  TermSCP is a terminal GUI for a SFTP/FTP/SCP client. So
-                  basically is a terminal utility with an TUI to connect to a
-                  remote server to retrieve and upload files and to interact
-                  with the local file system. It works both on Linux, MacOS, BSD
-                  and Windows and supports SFTP, SCP, FTP and FTPS.
-                </p>
-              </div>
-              <!-- ATtila -->
-              <div class="card">
-                <h1>
-                  <a href="https://github.com/veeso/ATtila" target="_blank"
-                    ><i class="devicon-python-plain"></i>&nbsp;ATtila</a
-                  >
-                </h1>
-                <pre>pip3 install attila</pre>
-                <pre>
-DEVICE /dev/ttyUSB0
-BAUDRATE 115200
-ATZ;;OK
-ATE0;;OK
-#I'm going to verify signal etc, we don't need to aof
-AT+CSQ;;OK;;;;;;["AT+CSQ=?{rssi::[0-9]{1,2}},","AT+CSQ=${rssi},?{ber::[0-9]{1,2}}"]
-AT+CGSN;;OK;;;;;;["?{IMEI::^[0-9]{15}$}"]
-                </pre>
-                <p>
-                  ATtila is both a Python3 🐍 module and a CLI utility. The
-                  module's purpose is to ease the communication with devices
-                  through serial port, automating the scripts execution
-                  workflow; in particular ATtila is designed for RF modules
-                  which use AT commands. It is both possible to send single AT
-                  commands indicating what is the expected response, what
-                  information to store for each command and define an
-                  alternative behaviour in case of an unexpected responses.
-                </p>
-              </div>
-              <!-- FlapQML -->
-              <div class="card">
-                <h1>
-                  <a href="https://github.com/veeso/FlapQML" target="_blank"
-                    ><i class="fa fa-terminal"></i>&nbsp;FlapQML</a
-                  >
-                </h1>
-                <video class="preview" autoplay muted loop>
-                  <source
-                    src="assets/videos/flaps.mp4"
-                    type="video/mp4"
-                    resolve-video-fallback="https://github.com/veeso/FlapQML/blob/master/img/flaps.gif?raw=true"
-                  />
-                </video>
-                <p>
-                  FlapQML is a component for QtQuick applications which can be
-                  used to create flapboards, flipclocks and other flap-related
-                  stuff. The component Flap represents a single Flap, which can
-                  then be used with other flaps (in a grid for example) to
-                  create a board.
-                </p>
-              </div>
-              <!-- tui-realm -->
-              <div class="card">
-                <h1>
-                  <a href="https://github.com/veeso/tui-realm" target="_blank"
-                    ><i class="devicon-rust-plain"></i>&nbsp;tui-realm</a
-                  >
-                </h1>
-                <pre>cargo add tui-realm</pre>
-                <p>
-                  tui-realm is a framework for
-                  <a href="https://github.com/fdehau/tui-rs">tui</a> which
-                  provides a layer to simplify the implementation of terminal
-                  user interfaces adding the possibility to work with re-usable
-                  component with properties and state, as you'd do in React; but
-                  that's not all: the input events are handled through a system
-                  based on Messages, providing you with the possibility to
-                  implement update functions as happens in Elm.
-                </p>
-              </div>
-              <!-- tui-realm -->
-              <div class="card">
-                <h1>
-                  <a href="https://github.com/veeso/pyc-shell" target="_blank"
-                    ><i class="devicon-rust-plain"></i>&nbsp;pyc-shell</a
-                  >
-                </h1>
-                <pre>cargo install pyc-shell</pre>
-                <p>
-                  pyc (Pronounced "Rus") is a simple CLI application, written in
-                  Rust, which allows you to interface with your favourite shell,
-                  giving you the possibility to perform commands in cyrillic and
-                  other alphabets, through command and output transliteration.
-                </p>
-              </div>
-              <div class="card">
-                <h1>
-                  <a href="https://github.com/veeso/libBMpp" target="_blank"
-                    ><i class="devicon-cplusplus-plain"></i>&nbsp;libBMpp</a
-                  >
-                </h1>
-                <p>
-                  libBmpp is a library for working with Bitmaps C++11 (or
-                  greater), which allows you to manipulate bitmaps images.
-                </p>
-              </div>
-              <!-- End of cards -->
+              </video>
+              <h1>
+                <a href="https://github.com/veeso/FlapQML" target="_blank"
+                  ><i class="fa fa-terminal"></i>&nbsp;FlapQML</a
+                >
+              </h1>
+              <p>
+                FlapQML is a component for QtQuick applications which can be
+                used to create flapboards, flipclocks and other flap-related
+                stuff. The component Flap represents a single Flap, which can
+                then be used with other flaps (in a grid for example) to create
+                a board.
+              </p>
+            </div>
+            <!-- tui-realm -->
+            <div class="project">
+              <img
+                src="assets/images/tui-realm.webp"
+                class="preview pull-right"
+              />
+              <h1>
+                <a href="https://github.com/veeso/tui-realm" target="_blank"
+                  ><i class="devicon-rust-plain"></i>&nbsp;tui-realm</a
+                >
+              </h1>
+              <pre>cargo add tui-realm</pre>
+              <p>
+                tui-realm is a framework for
+                <a href="https://github.com/fdehau/tui-rs">tui</a> which
+                provides a layer to simplify the implementation of terminal user
+                interfaces adding the possibility to work with re-usable
+                component with properties and state, as you'd do in React; but
+                that's not all: the input events are handled through a system
+                based on Messages, providing you with the possibility to
+                implement update functions as happens in Elm.
+              </p>
+            </div>
+            <!-- Pyc-shell -->
+            <div class="project">
+              <img src="assets/images/pyc.webp" class="preview pull-left" />
+              <h1>
+                <a href="https://github.com/veeso/pyc-shell" target="_blank"
+                  ><i class="devicon-rust-plain"></i>&nbsp;pyc-shell</a
+                >
+              </h1>
+              <pre>cargo install pyc-shell</pre>
+              <p>
+                pyc (Pronounced "Rus") is a simple CLI application, written in
+                Rust, which allows you to interface with your favourite shell,
+                giving you the possibility to perform commands in cyrillic and
+                other alphabets, through command and output transliteration.
+              </p>
+            </div>
+            <!-- libBMPP -->
+            <div class="project">
+              <img
+                src="assets/images/libbmpp.webp"
+                class="preview pull-right"
+              />
+              <h1>
+                <a href="https://github.com/veeso/libBMpp" target="_blank"
+                  ><i class="devicon-python-plain"></i>&nbsp;libBMpp</a
+                >
+              </h1>
+              <p>
+                libBmpp is a library for working with Bitmaps C++11 (or
+                greater), which allows you to manipulate bitmaps images.
+              </p>
             </div>
             <hr />
             <h2 class="read-more">
