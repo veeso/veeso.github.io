@@ -30,12 +30,10 @@ function resolveVideoFallback() {
   $("[resolve-video-fallback]").each(function () {
     const fallback = $(this).attr("resolve-video-fallback");
     // Add listener
-    console.log(fallback, this);
     $(this).on("error", function () {
       const image = document.createElement("img");
       image.src = fallback;
       image.classList = ["preview"];
-      console.log($(this).parent());
       $(this).parent().replaceWith(image);
     });
   });

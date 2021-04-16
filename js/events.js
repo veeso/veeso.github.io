@@ -1,8 +1,13 @@
+const hashBlacklist = ["#menu"];
+
 /**
  * @description handle hash change
  */
 function onHashChange() {
-  selectMenuEntry(location.hash);
+  const hash = location.hash;
+  if (!hashBlacklist.includes(hash)) {
+    selectMenuEntry(location.hash);
+  }
 }
 
 /**
@@ -19,6 +24,17 @@ function selectMenuEntry(hash) {
 
 function onWaypoint(hash) {
   selectMenuEntry(hash);
+}
+
+function onMenuBurgerClick() {
+  const active = $("#menu").hasClass("active");
+  if (active) {
+    $("#layout").removeClass("active");
+    $("#menu").removeClass("active");
+  } else {
+    $("#layout").addClass("active");
+    $("#menu").addClass("active");
+  }
 }
 
 // Scroll events
@@ -63,4 +79,6 @@ window.onscroll = function () {
 // Startup
 $(function () {
   onHashChange();
+  // Burger event listener
+  $("#menu-burger").on("click", onMenuBurgerClick);
 });

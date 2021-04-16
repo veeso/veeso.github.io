@@ -481,7 +481,7 @@ small screens.
 
 /* -- Responsive Styles (Media Queries) ------------------------------------- */
 
-#main,
+#layout,
 #menu,
 .menu-link {
   -webkit-transition: all 0.2s ease-out;
@@ -491,31 +491,31 @@ small screens.
   transition: all 0.2s ease-out;
 }
 
-#main {
+#layout {
   position: relative;
   left: 0;
   padding-left: 0;
 }
-#main.active #menu {
+
+#layout.active #menu {
   left: 20vw;
-  width: 20vw;
+  width: 240px;
 }
 
-#main.active .menu-link {
-  left: 20vw;
+#layout.active .menu-link {
+  left: 240px;
 }
 
 /*
 Hides the menu at `48em`, but modify this based on your app's needs.
 */
 @media (min-width: 48em) {
-  .header,
-  .content {
+  .header {
     padding-left: 2em;
     padding-right: 2em;
   }
 
-  #main {
+  #layout {
     padding-left: 20vw; /* left col width "#menu" */
     left: 0;
   }
@@ -529,7 +529,7 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     display: none;
   }
 
-  #main.active .menu-link {
+  #layout.active .menu-link {
     left: 20vw;
   }
 }
