@@ -147,11 +147,8 @@
                 </h1>
                 <pre>pip3 install attila</pre>
                 <pre>
-#Set up communication parameters
 DEVICE /dev/ttyUSB0
 BAUDRATE 115200
-ATH0;;;;5000
-ATE0;;OK
 ATZ;;OK
 ATE0;;OK
 #I'm going to verify signal etc, we don't need to aof
@@ -262,6 +259,76 @@ AT+CGSN;;OK;;;;;;["?{IMEI::^[0-9]{15}$}"]
                 >
               </h1>
             </header>
+            <div class="cards">
+              <!-- Prima.it -->
+              <div class="card">
+                <h1>
+                  <a href="https://prima.it" target="_blank"
+                    >Prima Assicurazioni</a
+                  >
+                </h1>
+                <h2>Software Engineer</h2>
+                <h3>March 2021 - Current occupation</h3>
+                <p>
+                  Development of the company's website and of the backend
+                  micro-services architecture. The company, which is a pioneer
+                  in the italian tech environment, gave me the possibility to
+                  use different avant-gardiste programming languages such as
+                  Elixir, Rust and Elm and technologies such as GraphQL, Event
+                  sourcing, CQRS, hexagonal architecture and many others.
+                </p>
+              </div>
+              <!-- Solari -->
+              <div class="card">
+                <h1>
+                  <a href="https://www.solari.it/" target="_blank"
+                    >Solari di Udine</a
+                  >
+                </h1>
+                <h2>Embedded Software Developer</h2>
+                <h3>June 2017 - March 2021</h3>
+                <p>
+                  Development of passenger information systems (PIS) and access
+                  control systems. The job is mainly focused in the development
+                  of driver applications for displays with LED and eInk
+                  technology, in addition to flapboards and also maintenance web
+                  interfaces. Several programming languages have been involved
+                  during development, such as C/C++, Python, Rust,
+                  JavaScript/TypeScript, QML, PHP and technologies such as
+                  SQL-databases (SQLite, MariaDB), Redis, NodeJS, React and
+                  AngularJS.
+                </p>
+              </div>
+              <!-- XLBIT -->
+              <div class="card">
+                <h1>
+                  <a href="https://www.xlbit.com/" target="_blank"
+                    >XLBIT s.n.c.</a
+                  >
+                </h1>
+                <h2>Java Developer</h2>
+                <h3>February 2016</h3>
+                <p>
+                  Internship of two weeks which consisted in the development of
+                  a software for the company's email inbox management.
+                </p>
+              </div>
+              <!-- Teknowelt Jakob -->
+              <div class="card">
+                <h1>
+                  <a href="https://www.expert.de/bayreuth" target="_blank"
+                    >Technowelt Jakob</a
+                  >
+                </h1>
+                <h2>Computer repair technician</h2>
+                <h3>June 2015 - July 2015</h3>
+                <p>
+                  Five weeks internship at a specialised electronic store in the
+                  assistance department, focused on maintenance and repair of
+                  PCs.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
         <!-- Contacts -->
@@ -293,8 +360,10 @@ AT+CGSN;;OK;;;;;;["?{IMEI::^[0-9]{15}$}"]
                 </li>
               </ul>
               <!-- Copyright -->
-              <span>Christian Visintin © All Rights Reserved ~ </span
-              ><span resolve-copyright></span>
+              <p class="copyright">
+                <span>Christian Visintin © All Rights Reserved ~ </span
+                ><span resolve-copyright></span>
+              </p>
             </footer>
           </div>
         </section>
