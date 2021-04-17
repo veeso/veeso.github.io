@@ -609,6 +609,40 @@ footer p.copyright {
   color: #808080;
 }
 
+#menu .pure-menu-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#menu .pure-menu-bottom a {
+  font-size: 1.5em;
+  color: #888;
+  display: inline-block;
+  text-align: center;
+  border: 0;
+  text-decoration: none;
+  text-align: center;
+}
+
+#menu .pure-menu-bottom a:hover {
+  color: #aaa;
+}
+
+#menu .pure-menu-bottom ul {
+  list-style: none;
+  cursor: default;
+  margin-block-start: 0;
+  padding-inline-start: 0;
+}
+
+#menu .pure-menu-bottom ul li {
+  display: inline-block;
+  text-align: center;
+}
+
 /* -- Dynamic Button For Responsive Menu -------------------------------------*/
 
 /*
