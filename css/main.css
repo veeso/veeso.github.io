@@ -206,13 +206,13 @@ h5 {
 
 .parallax-card {
   background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 0.5em;
+  border-radius: 10%;
   color: black;
   text-align: center;
   position: relative;
   margin: auto;
   width: 50%;
-  height: 40%;
+  height: 45%;
   padding: 5%;
   overflow-y: auto;
 }
@@ -236,6 +236,12 @@ p {
 .parallax-card p {
   font-size: 1.2em;
   text-align: center;
+}
+
+.parallax-card .pronunciation {
+  font-size: 1em;
+  line-height: 0.5em;
+  font-weight: 300;
 }
 
 .avatar {
