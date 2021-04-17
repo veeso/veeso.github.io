@@ -247,7 +247,7 @@ p {
 .avatar {
   width: 20%;
   height: auto;
-  border: 1px solid #ccc;
+  border: 0;
   border-radius: 50%;
 }
 
