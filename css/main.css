@@ -212,9 +212,10 @@ h5 {
   position: relative;
   margin: auto;
   width: 50%;
-  height: 45%;
+  min-height: 25%;
+  height: fit-content;
   padding: 5%;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 
 .parallax-card a {
