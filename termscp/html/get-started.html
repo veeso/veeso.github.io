@@ -1,0 +1,101 @@
+<head>
+  <link rel="stylesheet" href="css/get-started.css" />
+</head>
+<body>
+  <section id="start" class="container start">
+    <h1>Get started</h1>
+    <section>
+      <h2><i class="devicon-linux-plain"></i>&nbsp;Linux users</h2>
+      <div class="sub-system">
+        <h3><i class="devicon-linux-plain"></i>&nbsp;Arch derived users</h3>
+        <div class="installation">
+          <p>
+            On Arch Linux based distros, you can install termscp using an AUR
+            package manager such as
+            <a href="https://github.com/Jguer/yay" target="_blank">yay</a> then
+            run:
+          </p>
+          <pre><span class="function">yay</span> -S <span class="string">termscp</span></pre>
+        </div>
+        <h3><i class="devicon-debian-plain"></i>&nbsp;Debian derived users</h3>
+        <div class="installation">
+          <p>
+            On Debian based distros, you can install termscp using the Deb
+            package via:
+          </p>
+          <pre><span class="function">wget</span> -O termscp.deb <span class="string">https://github.com/veeso/termscp/releases/latest/download/termscp_0.5.0_amd64.deb</span>
+sudo <span class="function">dpkg</span> -i <span class="string">termscp.deb</span></pre>
+        </div>
+        <h3><i class="devicon-redhat-plain"></i>&nbsp;Redhat derived users</h3>
+        <div class="installation">
+          <p>
+            On RedHat based distros, you can install termscp using the RPM
+            package via:
+          </p>
+          <pre><span class="function">wget</span> -O termscp.rpm <span class="string">https://github.com/veeso/termscp/releases/latest/download/termscp-0.5.0-1.x86_64.rpm</span>
+sudo <span class="function">rpm</span> -U <span class="string">termscp.rpm</span></pre>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2><i class="devicon-apple-plain"></i>&nbsp;MacOS users</h2>
+      <div class="installation">
+        <p>
+          Install termscp via
+          <a href="https://brew.sh/" target="_blank">Brew</a>
+        </p>
+        <pre><span class="function">brew</span> install <span class="string">veeso/termscp/termscp</span></pre>
+      </div>
+    </section>
+    <section>
+      <h2><i class="devicon-windows8-plain"></i>&nbsp;Windows users</h2>
+      <div class="installation">
+        <p>
+          You can install termscp on Windows via
+          <a
+            href="https://community.chocolatey.org/packages/termscp"
+            target="_blank"
+            >Chocolatey</a
+          >
+        </p>
+        <pre><span class="function">choco</span> install <span class="string">termscp</span></pre>
+        <p>
+          Consider that Chocolatey moderation can take up to a few weeks since
+          last release, so if the latest version is not available yet, you can
+          install it downloading the ZIP file from
+          <a
+            href="https://github.com/veeso/termscp/releases/latest/download/termscp.0.5.0.nupkg"
+            target="_blank"
+            >Github</a
+          >
+          and then, from the ZIP directory, install it via
+        </p>
+        <pre><span class="function">choco</span> install <span class="string">termscp</span> -s .</pre>
+      </div>
+    </section>
+    <section>
+      <h2><i class="devicon-rust-plain"></i>&nbsp;Install with Cargo</h2>
+      <div class="installation">
+        <p>
+          If a package is not available for your system, you can opt to install
+          termscp via
+          <a href="https://www.rust-lang.org/tools/install" target="_blank"
+            >Cargo</a
+          >. To install termscp via Cargo, these requirements must be satisfied:
+        </p>
+        <ul>
+          <li>
+            Linux:
+            <ul>
+              <li>pkg-config</li>
+              <li>libssh2</li>
+              <li>openssl-dev</li>
+            </ul>
+          </li>
+        </ul>
+        <p>Then you can install it via</p>
+        <pre><span class="function">cargo</span> install <span class="string">termscp</span></pre>
+      </div>
+    </section>
+  </section>
+</body>
