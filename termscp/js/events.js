@@ -39,7 +39,9 @@ function loadPage(hash) {
       loadHtml("get-started.html");
       break;
     case "#user-manual":
-      loadMarkdown("md/user-manual.md");
+      loadMarkdown(
+        "https://raw.githubusercontent.com/veeso/termscp/main/docs/man.md"
+      );
       break;
     case "#changelog":
       loadMarkdown(
