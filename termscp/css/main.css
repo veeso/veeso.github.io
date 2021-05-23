@@ -133,10 +133,13 @@ footer p.copyright {
   border-radius: 0.25rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  margin-left: auto;
-  margin-right: auto;
   padding: 0.5rem;
   position: relative;
+}
+
+.alert-center {
+  margin-left: auto;
+  margin-right: auto;
   width: 50%;
 }
 
