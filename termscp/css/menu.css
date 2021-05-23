@@ -104,10 +104,17 @@
 
 #menu .pure-menu-bottom {
   bottom: 0;
+  display: none;
   left: 0;
   position: absolute;
   text-align: center;
   width: 100%;
+}
+
+@media (min-width: 640px) {
+  #menu .pure-menu-bottom {
+    display: block;
+  }
 }
 
 #menu .pure-menu-bottom a {
