@@ -43,6 +43,9 @@ function loadPage(hash) {
         "https://raw.githubusercontent.com/veeso/termscp/main/docs/man.md"
       );
       break;
+    case "#updates":
+      loadHtml("updates.html");
+      break;
     case "#changelog":
       loadMarkdown(
         "https://raw.githubusercontent.com/veeso/termscp/main/CHANGELOG.md"
