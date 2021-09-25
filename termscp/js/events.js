@@ -39,9 +39,7 @@ function loadPage(hash) {
       loadHtml("get-started.html");
       break;
     case "#user-manual":
-      loadMarkdown(
-        "https://raw.githubusercontent.com/veeso/termscp/main/docs/man.md"
-      );
+      loadUserManual();
       break;
     case "#changelog":
       loadMarkdown(
@@ -92,6 +90,14 @@ function onMenuBurgerClick() {
     $("#layout").addClass("active");
     $("#menu").addClass("active");
   }
+}
+
+function loadUserManual() {
+  // Load language
+  const lang = getNavigatorLanguage();
+  loadMarkdown(
+    `https://raw.githubusercontent.com/veeso/termscp/main/docs/man-${lang}.md`
+  );
 }
 
 // Register
