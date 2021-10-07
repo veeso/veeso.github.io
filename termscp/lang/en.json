@@ -1,0 +1,86 @@
+{
+  "menu": {
+    "desc": "A feature rich terminal UI file transfer",
+    "intro": "Intro",
+    "getStarted": "Get started",
+    "updates": "Install updates",
+    "manual": "User manual",
+    "changelog": "Release history",
+    "author": "About the author",
+    "support": "Support me"
+  },
+  "intro": {
+    "caption": "A feature rich terminal UI file transfer and explorer with support for SCP/SFTP/FTP/S3",
+    "getStarted": "Get started →",
+    "versionAlert": "termscp 0.7.0 is NOW out! Download it from",
+    "features": {
+      "handy": {
+        "title": "Handy UI",
+        "body": "Explore and operate on the remote and on the local machine file system with a handy UI."
+      },
+      "crossPlatform": {
+        "title": "Cross platform",
+        "body": "Runs on Windows, MacOS, Linux and FreeBSD"
+      },
+      "customizable": {
+        "title": "Customizable",
+        "body": "Customize the file explorer, the UI and many other parameters..."
+      },
+      "bookmarks": {
+        "title": "Bookmarks",
+        "body": "Connect to your favourite hosts through built-in bookmarks and recent connections"
+      },
+      "security": {
+        "title": "Security first",
+        "body": "Save your passwords into your operating system key vault"
+      },
+      "performance": {
+        "title": "Eye on performance",
+        "body": "termscp has been developed keeping an eye on performance to prevent high cpu usage"
+      }
+    },
+    "footer": {
+      "getStarted": "Get started",
+      "manual": "User manual"
+    }
+  },
+  "getStarted": {
+    "title": "Get started",
+    "quickSetup": "Quick setup",
+    "suggested": "We strongly suggest this method to install termscp",
+    "posixUsers": "If you are a Linux, a FreeBSD or a MacOS user, you can install termscp via this simple command , which will use a shell script installer:",
+    "windows": {
+      "title": "Windows users",
+      "intro": "You can install termscp on Windows via",
+      "moderation": "Consider that Chocolatey moderation can take up to a few weeks since last release, so if the latest version is not available yet, you can install it downloading the ZIP file from",
+      "then": "and then, from the ZIP directory, install it via"
+    },
+    "linuxUsers": "Linux users",
+    "notConfident": "Opt for these methods instead if you don't feel confident using the shell script",
+    "noBinary": "Opt for this method instead if binaries for your platform are not available",
+    "arch": {
+      "title": "Arch derived users",
+      "intro": "On Arch Linux based distros, you can install termscp using an AUR package manager such as",
+      "then": "then run"
+    },
+    "debian": {
+      "title": "Debian derived users",
+      "body": "On Debian based distros, you can install termscp using the Deb package via:"
+    },
+    "redhat": {
+      "title": "Redhat derived users",
+      "body": "On RedHat based distros, you can install termscp using the RPM package via:"
+    },
+    "macos": {
+      "title": "MacOS users",
+      "install": "Install termscp via"
+    },
+    "cargo": {
+      "title": "Install with Cargo",
+      "body": "If a package is not available for your system, you can opt to install termscp via",
+      "requirements": "To install termscp via Cargo, these requirements must be satisfied",
+      "install": "Then you can install termscp via",
+      "noKeyring": "Or if you don't want to have support for keyring or you're building on *BSD:"
+    }
+  }
+}
