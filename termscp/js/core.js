@@ -1,5 +1,3 @@
-var siteLanguage = getNavigatorLanguage();
-
 /**
  * @description return navigator language. If language is not supported default will be returned
  * @returns {string}
@@ -33,6 +31,5 @@ function languageSupported(lang) {
  * @param {string} lang
  */
 function setSiteLanguage(lang) {
-  siteLanguage = lang;
-  setLanguage(siteLanguage);
+  setLanguage(lang);
 }
