@@ -52,7 +52,9 @@ function loadPage(hash) {
 
 function loadHtml(page) {
   const url = "html/" + page;
-  $("#main").load(url);
+  $("#main").load(url, function () {
+    onPageLoaded();
+  });
 }
 
 function loadMarkdown(page) {
@@ -64,6 +66,7 @@ function loadMarkdown(page) {
     div.html(converter.makeHtml(md));
     $("#main").empty();
     $("#main").append(div);
+    onPageLoaded();
   });
 }
 
@@ -95,9 +98,19 @@ function onMenuBurgerClick() {
 function loadUserManual() {
   // Load language
   const lang = getNavigatorLanguage();
-  loadMarkdown(
-    `https://raw.githubusercontent.com/veeso/termscp/main/docs/man-${lang}.md`
-  );
+  if (lang === "en") {
+    loadMarkdown(
+      `https://raw.githubusercontent.com/veeso/termscp/main/docs/man.md`
+    );
+  } else {
+    loadMarkdown(
+      `https://raw.githubusercontent.com/veeso/termscp/main/docs/${lang}/man.md`
+    );
+  }
+}
+
+function onPageLoaded() {
+  reloadTranslations();
 }
 
 // Register
@@ -106,6 +119,8 @@ window.onhashchange = onHashChange;
 // Startup
 $(function () {
   onHashChange();
+  // Init language
+  setSiteLanguage(getNavigatorLanguage());
   // Burger event listener
   $("#menu-burger").on("click", onMenuBurgerClick);
   $(".pure-menu-heading").on("click", function () {
