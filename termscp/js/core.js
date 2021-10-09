@@ -23,7 +23,7 @@ function getNavigatorLanguage() {
  * @returns {boolean}
  */
 function languageSupported(lang) {
-  return ["en", "zh-CN", "it", "fr", "es", "de"].includes(lang);
+  return ["en", "zh-CN", "it", "fr", "es"].includes(lang);
 }
 
 /**
