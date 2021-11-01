@@ -4,7 +4,13 @@
  */
 
 function getNavigatorLanguage() {
-  const lang = navigator.language.split(/[-_]/)[0] || "en";
+  let lang = navigator.language;
+  // Complete lang
+  if (languageSupported(lang)) {
+    return lang;
+  }
+  // Reduced lang
+  lang = lang.split(/[-_]/)[0] || "en";
   if (!languageSupported(lang)) {
     return "en";
   }
@@ -17,5 +23,13 @@ function getNavigatorLanguage() {
  * @returns {boolean}
  */
 function languageSupported(lang) {
-  return ["en", "zh"].includes(lang);
+  return ["en", "zh-CN", "it", "fr", "es"].includes(lang);
+}
+
+/**
+ * @description update website language
+ * @param {string} lang
+ */
+function setSiteLanguage(lang) {
+  setLanguage(lang);
 }
