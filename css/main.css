@@ -341,20 +341,8 @@ section.page hr {
   margin: 0 2em 0 2em;
 }
 
-#about-me-page .hobbies ul li:nth-child(1) .icon {
-  color: #dd3838;
-}
-
-#about-me-page .hobbies ul li:nth-child(2) .icon {
-  color: #2eb429;
-}
-
-#about-me-page .hobbies ul li:nth-child(3) .icon {
-  color: #295ab4;
-}
-
-#about-me-page .hobbies ul li:nth-child(4) .icon {
-  color: darkviolet;
+#about-me-page .hobbies ul li .icon {
+  color: #404040;
 }
 
 /** Skill blocks */
@@ -406,7 +394,7 @@ section.page hr {
   z-index: 100;
   border-radius: 50%;
   vertical-align: middle;
-  max-width: 50%;
+  max-width: 20%;
   width: auto;
   height: auto;
 }
