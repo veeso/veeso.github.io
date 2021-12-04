@@ -166,3 +166,14 @@ footer p.copyright {
   border-color: #b8daff;
   color: #004085;
 }
+
+/* ko-fi */
+.floatingchat-container-wrap {
+  left: auto !important;
+  right: 16px !important;
+}
+
+.floating-chat-kofi-popup-iframe {
+  left: auto !important;
+  right: 16px !important;
+}

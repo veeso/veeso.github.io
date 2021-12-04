@@ -507,3 +507,14 @@ footer p.copyright {
   font-weight: 300;
   color: #ccc;
 }
+
+/* ko-fi */
+.floatingchat-container-wrap {
+  left: auto !important;
+  right: 16px !important;
+}
+
+.floating-chat-kofi-popup-iframe {
+  left: auto !important;
+  right: 16px !important;
+}
