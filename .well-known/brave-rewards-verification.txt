@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: veeso.github.io
+Token: 10bb2ea4473a567266ef3e5a983346137652df0ca7889d993498d02799fea1fc
