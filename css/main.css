@@ -164,6 +164,110 @@ header {
   font-size: 1.2em;
 }
 
+/** carousel */
+
+.carousel {
+  position: relative;
+  margin: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.carousel-slide {
+  background-color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  display: none;
+  padding: 2em 5em;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.carousel-slide h1 {
+  font-size: 2em;
+  font-weight: 300;
+  text-align: center;
+}
+
+.carousel-slide h2 {
+  font-size: 1.4em;
+  color: #666;
+  font-weight: 300;
+  text-align: center;
+}
+
+.carousel-slide h3 {
+  font-size: 1.1em;
+  color: #404040;
+  font-weight: 300;
+  text-align: center;
+}
+
+.carousel-slide h1 a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.5s;
+}
+
+.carousel-slide h1 a:hover {
+  color: purple;
+}
+
+.carousel-slide p {
+  font-weight: 300;
+  text-align: justify;
+  font-size: 1.2em;
+}
+
+.carousel-next,
+.carousel-prev {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0 3px 3px 0;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: -22px;
+  padding: 16px;
+  position: absolute;
+  top: 50%;
+  transition: 0.6s ease;
+  user-select: none;
+  width: auto;
+}
+
+.carousel-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.carousel-next:hover,
+.carousel-prev:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-dots {
+  margin-top: 2em;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.carousel-dot {
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  margin: 0 10px;
+  transition: background-color 0.6s ease;
+  width: 30px;
+}
+
+.carousel-active,
+.carousel-dot:hover {
+  background-color: #404040;
+}
+
 /** Read more */
 
 .read-more {
@@ -354,10 +458,6 @@ section.page hr {
   color: white;
 }
 
-#contacts i {
-  color: white;
-}
-
 #about-me-page {
   background-color: #fff;
 }
@@ -500,8 +600,8 @@ section.page hr {
 
 .project p {
   font-weight: 300;
-  text-align: justify;
   font-size: 1.2em;
+  text-align: justify;
 }
 
 /** Footer */
@@ -538,20 +638,12 @@ footer .contacts a i {
   transition: all 0.3s ease-in;
 }
 
-footer .contacts li:nth-child(1) a:hover i {
-  color: #dd3838 !important;
+footer .contacts li a i {
+  color: #fff;
 }
 
-footer .contacts li:nth-child(2) a:hover i {
-  color: #f0cf14 !important;
-}
-
-footer .contacts li:nth-child(3) a:hover i {
-  color: #3ddd38 !important;
-}
-
-footer .contacts li:nth-child(4) a:hover i {
-  color: #9b38dd !important;
+footer .contacts li a:hover i {
+  font-size: 1.2em;
 }
 
 footer p.copyright {
