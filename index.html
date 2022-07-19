@@ -139,10 +139,10 @@
       <!-- Body -->
       <main>
         <!-- Hero -->
-        <section id="about-me" class="parallax home-parallax">
+        <section id="about-me" class="hero">
           <div
             class="
-              parallax-card
+              hero-card
               animate__animated animate__fadeIn animate__slow
             "
           >
@@ -155,6 +155,19 @@
             <h3>
               Full-stack developer at <a href="https://prima.it">@prima</a>
             </h3>
+          </div>
+          <div class="w-100">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
           </div>
         </section>
         <section id="about-me-page" class="page">
@@ -646,7 +659,7 @@
       kofiWidgetOverlay.draw('veeso', {
         'type': 'floating-chat',
         'floating-chat.donateButton.text': 'Support me',
-        'floating-chat.donateButton.background-color': '#ff5f5f',
+        'floating-chat.donateButton.background-color': '#34a9e3',
         'floating-chat.donateButton.text-color': '#fff'
       });
     </script>

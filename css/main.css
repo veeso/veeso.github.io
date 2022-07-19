@@ -81,6 +81,10 @@ header {
   float: right;
 }
 
+.w-100 {
+  width: 100%;
+}
+
 .try-50 {
   width: 50%;
 }
@@ -188,28 +192,25 @@ h5 {
   font-weight: 300;
 }
 
-/** Parallax */
+/** hero intro */
 
-.parallax {
-  overflow: hidden;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.home-parallax {
+.hero {
   font-family: "Source Sans Pro" !important;
-  background-image: url("../assets/images/hero-bg.webp");
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(
+    60deg,
+    rgb(183, 58, 181) 0%,
+    rgb(0, 71, 193) 100%
+  );
 }
 
-.parallax-card {
-  background-color: rgba(255, 255, 255, 0.8);
+.hero-card {
+  background-color: rgba(255, 255, 255, 0.8) !important;
   border-radius: 10%;
   color: black;
   text-align: center;
@@ -218,35 +219,86 @@ h5 {
   width: 50%;
   min-height: 25%;
   height: fit-content;
-  padding: 5%;
+  padding: 2em;
   overflow-y: hidden;
 }
 
-.parallax-card a {
+.hero-card .avatar {
+  width: 30%;
+}
+
+.hero-card a {
   color: dodgerblue;
   text-decoration: none;
 }
 
-.parallax-card a:hover {
+.hero-card a:hover {
   color: purple;
 }
 
-.parallax-card h1,
+.hero-card h1,
 h2,
 p {
   font-family: "Source Sans Pro" !important;
   font-weight: 300;
 }
 
-.parallax-card p {
+.hero-card p {
   font-size: 1.2em;
   text-align: center;
 }
 
-.parallax-card .pronunciation {
+.hero-card .pronunciation {
   font-size: 1em;
   line-height: 0.5em;
   font-weight: 300;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  margin-bottom: -7px; /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+  bottom: 0;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
 }
 
 .avatar {

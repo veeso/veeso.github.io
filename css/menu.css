@@ -58,7 +58,7 @@
 }
 
 #menu .pure-menu-selected i {
-  color: #da4e3c;
+  color: white;
 }
 
 /*
@@ -213,9 +213,9 @@ small screens.
 }
 
 /*
-Hides the menu at `640px`, but modify this based on your app's needs.
+Hides the menu at `1024px`, but modify this based on your app's needs.
 */
-@media (min-width: 640px) {
+@media (min-width: 1024px) {
   .header {
     padding-left: 2em;
     padding-right: 2em;
@@ -240,14 +240,14 @@ Hides the menu at `640px`, but modify this based on your app's needs.
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1024px) {
   /* Only apply this when the window is small. Otherwise, the following
   case results in extra padding on the left:
       * Make the window small.
       * Tap the menu to trigger the active state.
       * Make the window large again.
   */
-  #main.active {
+  main.active {
     position: relative;
     left: 20vw;
   }
