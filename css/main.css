@@ -149,13 +149,14 @@ header {
 }
 
 .card h1 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
   transition: 0.5s;
 }
 
 .card h1 a:hover {
   color: purple;
+  cursor: pointer;
 }
 
 .card p {
@@ -215,8 +216,8 @@ header {
 
 .carousel-slide p {
   font-weight: 300;
-  text-align: justify;
   font-size: 1.2em;
+  text-align: justify;
 }
 
 .carousel-next,
@@ -265,7 +266,50 @@ header {
 
 .carousel-active,
 .carousel-dot:hover {
-  background-color: #404040;
+  background-color: #606060;
+}
+
+/** tooltip */
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: block;
+  width: fit-content;
+}
+
+/* Tooltip text */
+.tooltip .tooltip-text {
+  background-color: #555;
+  border-radius: 6px;
+  font-size: 0.7em;
+  opacity: 0;
+  padding: 5px 0;
+  position: absolute;
+  margin-left: -15px;
+  text-align: center;
+  transition: opacity 1s;
+  width: 160px;
+  z-index: 1;
+}
+
+.tooltip .tooltip-text::after {
+  border-color: transparent black transparent transparent;
+  border-style: solid;
+  border-width: 5px;
+  content: "";
+  margin-top: -5px;
+  position: absolute;
+  right: 100%;
+  top: 50%;
+}
+
+.tooltip:hover .tooltip-text {
+  opacity: 1;
+}
+
+.tooltip-right {
+  top: -5px;
+  left: 125%;
 }
 
 /** Read more */
@@ -438,7 +482,6 @@ section.page hr {
   color: inherit;
   text-decoration: none;
   border-bottom: dotted 1px #80808080;
-  cursor: text;
 }
 
 .container header a i {
@@ -453,9 +496,42 @@ section.page hr {
   background-color: #eee;
 }
 
+.work-experience-hire-me {
+  text-align: center;
+}
+
 #contacts {
-  background-color: #303030;
+  background-color: #e2e2e2;
   color: white;
+}
+
+#contacts h1 {
+  color: #606060;
+}
+
+.contacts--contacts {
+  font-size: 1.1em;
+  padding: 1em;
+}
+
+.contacts--contacts h2 a {
+  transition: 0.5s;
+}
+
+.contacts--contacts h2 a:hover {
+  color: purple;
+  text-decoration: underline;
+}
+
+.contacts--contacts a {
+  color: #808080;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.contacts--contacts i {
+  color: #606060;
+  margin-right: 10px;
 }
 
 #about-me-page {
@@ -606,11 +682,16 @@ section.page hr {
 
 /** Footer */
 
+#footer {
+  background-color: #303030;
+  color: white;
+}
+
 footer {
   text-align: center;
 }
 
-footer .contacts {
+.footer-contacts {
   list-style: none;
   cursor: default;
   margin-block-start: 0;
@@ -618,11 +699,11 @@ footer .contacts {
   padding: 1em 0 1em 0;
 }
 
-footer .contacts li {
+.footer-contacts li {
   display: inline-block;
 }
 
-footer .contacts a {
+.footer-contacts a {
   font-size: 3em;
   color: #fff;
   display: inline-block;
@@ -634,15 +715,15 @@ footer .contacts a {
   text-decoration: none;
 }
 
-footer .contacts a i {
+.footer-contacts a i {
   transition: all 0.3s ease-in;
 }
 
-footer .contacts li a i {
+.footer-contacts li a i {
   color: #fff;
 }
 
-footer .contacts li a:hover i {
+.footer-contacts li a:hover i {
   font-size: 1.2em;
 }
 

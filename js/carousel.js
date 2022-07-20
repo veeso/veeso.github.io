@@ -24,11 +24,11 @@ function showSlides(n) {
   for (i = 0; i < slides.length; i++) {
     $(slides[i])
       .css("display", "none")
-      .removeClass("animate__animated animate__flipInX");
+      .removeClass("animate__animated animate__fadeIn");
   }
   const visibleSlide = $(slides[slideIndex - 1]);
   visibleSlide
-    .addClass("animate__animated animate__flipInX")
+    .addClass("animate__animated animate__fadeIn")
     .css("display", "block");
   if (dots.length > 0) {
     for (i = 0; i < dots.length; i++) {
